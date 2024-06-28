@@ -20,8 +20,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-![Mobile View](./screenshots/Mobile View.png)
-![iPad Mini and Larger Screens](./screenshots/Desktop View.png)
+![Mobile View](screenshots/Mobile View.png)
+![iPad Mini and Larger Screens](screenshots/Desktop View.png)
 
 ### Links
 
