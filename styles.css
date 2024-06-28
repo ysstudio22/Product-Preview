@@ -1,0 +1,145 @@
+*,* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-Cyan: hsl(158,36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-Dark-Blue: hsl(212, 21%, 14%);
+    --Dark-Grayish-Blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --Mobile: 23.4375rem; /*375px*/
+    --iPad-Mini: 48rem; /*768px*/
+    --Desktop: 90rem; /*1440px*/
+}
+
+body {
+    background-color: var(--Cream);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+article {
+    margin: auto;
+    width: var(--Mobile);
+    height: 38rem;
+    background-color: var(--White);
+    border-radius: 0.625rem;
+
+    @media (width >= 768px) {
+    width: 44rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+}
+
+section {
+    padding: 1.5rem;
+}
+
+#imagecontainer, #mobile, section {
+    width: var(--Mobile);
+    height: 15rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+
+    @media (width >= 768px) {
+        height: 20rem;
+        
+        #mobile {
+        display: none;
+        }
+    }
+}
+
+
+#desktop {
+    display: none;
+
+    @media (width >= 768px) {
+    display: block;
+    height: 30rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+    }
+}
+
+#price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 12rem;
+}
+
+
+span, header, p, #price, #btncontainer {
+    margin: 1rem 0;
+}
+
+#btncontainer {
+    width: 20rem;
+    border-radius: 0.625rem;
+}
+
+header {
+    font-family: "Fraunces", serif;
+    color: var(--Very-Dark-Blue);
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    @media (width >= 768px) {
+        font-size: 3rem;
+    }
+}
+
+p, span {
+    color: var(--Dark-Grayish-Blue);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+span {
+    letter-spacing: 0.2rem;    
+    text-transform: uppercase;
+}
+
+#discountedprice {
+    font-family: "Fraunces", serif;
+    color: var(--Dark-Cyan);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#cart {
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.5rem;
+}
+
+button {
+    background-color: var(--Dark-Cyan);
+    color: var(--White);
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border-radius: 0.625rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    &:hover {
+        background-color: rgb(29, 73, 29);
+        cursor: pointer;
+    }
+
+}
+
