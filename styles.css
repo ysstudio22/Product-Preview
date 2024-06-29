@@ -28,13 +28,11 @@ body {
 article {
     margin: auto;
     width: var(--Mobile);
-    height: 38rem;
     background-color: var(--White);
     border-radius: 0.625rem;
 
     @media (width >= 768px) {
     width: 44rem;
-    height: 30rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -45,14 +43,13 @@ section {
     padding: 1.5rem;
 }
 
-#imagecontainer, #mobile, section {
+#imagecontainer, #mobile {
     width: var(--Mobile);
     height: 15rem;
     border-radius: 0.625rem 0.625rem 0 0;
 
     @media (width >= 768px) {
-        height: 20rem;
-        
+       height: 30rem; 
         #mobile {
         display: none;
         }
